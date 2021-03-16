@@ -2,11 +2,13 @@
   <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
+    <div class="abc">123232</div>
   </div>
+  <el-button type="primary">222</el-button>
   <router-view />
 </template>
 
-<style>
+<style lang='less'>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -17,6 +19,9 @@
 
 #nav {
   padding: 30px;
+  .abc {
+    color: red  
+  }
 }
 
 #nav a {
